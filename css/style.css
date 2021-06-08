@@ -371,21 +371,28 @@ img {
   margin-right: 10px;
 }
 
-.social-icons li {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  color: var(--social-icons);
-}
-
 .social-icons a {
   fill: var(--social-icons);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons a:hover {
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
   border-radius: 50%;
@@ -425,7 +432,22 @@ img {
   color: var(--social-icons);
 }
 
-.clients .link-company:hover {
+.link-company:hover {
+  border-color: solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.link-company:focus {
+  border-color: solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.clients-item:hover {
+  border-color: solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.clients-item :focus {
   border-color: solid var(--blue-color);
   color: var(--blue-color);
 }
@@ -596,11 +618,6 @@ img {
 .finished-works a {
   text-decoration: none;
   color: var(--main-text-color);
-}
-
-.finished-works a:hover,
-.finished-works a:focus {
-  color: var(--blue-color);
 }
 
 .finished-works h2 {
